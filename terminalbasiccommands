@@ -1,0 +1,151 @@
+clear
+  562  ls
+  563  pwd
+  564  su -
+  565  cat /etc/os-release
+  566  ls -l
+  567  ls -la
+  568  date
+  569  cal
+  570  cat /etc/passwd
+  571  tail -5 /etc/passwd
+  572  head -5 /etc/passwd
+  573  date +%D
+  574  date +%F
+  575  date +%d/%m/%y
+  576  date +%d-%m-%y
+  577  date +%d\%m\%y
+  578  cal -3 8 2022
+  579  cal -2 8 2022
+  580  cal -5 8 2022
+  581  adduser a1
+  582  touch terminalbasiccommands
+  583  ls
+  584  history
+  119  pwd
+  120  ls
+  121  adduser a1
+  122  adduser a2
+  123  adduser s1,s2
+  124  adduser s1, s2
+  125  adduser s1
+  126  adduser s2
+  127  addgroup sales
+  128  addgroup accounts
+  129  less /etc/passwd
+  130  tail -3 /etc/passwd
+  131  tail -2 /etc/group
+  132  groupmems -g sales -a s1
+  133  groupmems -g sales -a s2
+  134  groupmems -g accounts -a a1
+  135  groupmems -g accounts -a a2
+  136  tail -2 /etc/group
+  587  nano terminalbasiccommands 
+  588  mkdir w1 w2 w3 w4
+ 611  sudo adduser suse
+  612  sudo adduser edubuntu
+  613  sudo addgroup admins
+  614  tail -2 /etc/passwd
+  615  tail -2 /etc/group
+  616  groupmems -g admins -a suse
+  617  sudo groupmems -g admins -a suse
+  618  sudo groupmems -g admins -a edubuntu
+  589  cd w1
+  590  mkdir jan feb mar
+  591  ls
+  592  cd ..
+  593  mkdir w2/apr w2/may w2/june w3/jul w3/aug w3/sept
+  594  cd w2
+  595  ls
+  596  cd ..
+  597  cd w3
+  598  ls
+  599  cd ..
+  600  mkdir w4/{oct,nov,dec}
+  601  mkdir unix/{cmd,apps,ser}
+  602  mkdir -p unix/{cmd,apps,ser}
+  603  tree unix
+  604  apt install tree
+  605  su -
+  606  sudo apt install tree
+  607  tree unix
+  608  tree w2
+  609  history
+ 611  sudo adduser suse
+  612  sudo adduser edubuntu
+  613  sudo addgroup admins
+  614  tail -2 /etc/passwd
+  615  tail -2 /etc/group
+  616  groupmems -g admins -a suse
+  617  sudo groupmems -g admins -a suse
+  618  sudo groupmems -g admins -a edubuntu
+mkdir /ITdata
+  141  ls
+  142  pwd
+  143  mkdir /ITdata/{work, letters, scripts}
+  144  cd /ITdata/work
+  145  cd /ITdata/work/
+  146  mkdir /ITdata/work{progs, tutorials, misc}
+  147  tree /ITdata
+  148  mkdir /ITdata/letters /ITdata/scripts
+  149  tree /ITdata
+  150  rmdir /ITdata/work{progs,
+  151  tree /ITdata
+  152  rmdir /ITdata/{work,
+  153  tree /ITdata
+  154  mkdir /ITdata/work
+  155  tree /ITdata
+  156  mkdir /ITdata/work/progs ITdata/work/tutorials ITdata/work/misc
+  157  tree /ITdata
+  158  mkdir ITdata/work/tutorials
+  159  mkdir ITdata/work/misc
+  160  mkdir /ITdata/work/tutorials /ITdata/work/misc
+  161  tree /ITdata
+  622  ls
+  623  su - 
+  624  nano terminalbasiccommands 
+  625  ls
+  626  cd Downloads/
+  627  ls
+  628  cd ..
+  629  cd /var/www/html
+  630  ls
+  631  mkdir demo
+  632  sudo mkdir demo
+  633  cd demo
+  634  cp /home/student/Downloads/sample.war .
+  635  sudo cp /home/student/Downloads/sample.war .
+  636  ls -l
+  637  jar -xvf sample.war
+  638  sudo jar -xvf sample.war
+  639  ls
+  640  wc -c /etc/passwd
+  641  history
+  642  cd /
+    651  tail -5 /etc/group
+  652  chown a1:admins /ITdata
+  653  sudo chown a1:admins /ITdata
+  654  sudo chmod o-rx /ITdata
+  655  sudo chmod g-rx /ITdata
+  656  sudo chmod u-rx /ITdata
+  657  sudo chmod u+rwx /ITdata
+  658  /ITdata ls -la
+  659  sudo ls -la /ITdata
+  660  sudo chmod o+rwx /ITdata
+  661  sudo ls -la /ITdata
+  662  sudo chmod g+rwx /ITdata
+  663  sudo ls -la /ITdata
+  664  cd /
+  665  ls
+  669  tail -5 /etc/group
+  670  mkdir /salesdata
+  671  sudo mkdir /salesdata
+  672  chown s1:sales /salesdata
+  673  sudo chown s1:sales /salesdata
+  674  chmod u+rwx /salesdata
+  675  sudo chmod u+rwx /salesdata
+  676  sudo chmod g+rx /salesdata
+  677  sudo chmod o-rwx /salesdata
+  678  ls -la /salesdata
+  679  sudo ls -la /salesdata
+

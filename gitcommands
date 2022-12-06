@@ -1,0 +1,137 @@
+  mkdir gitSample1
+  690  cd gitSample1/
+  691  git init
+  692  nano index1.html
+  693  cat index1.html 
+  694  git status
+  695  git add index1.html 
+  696  git status
+  697  git commit -m "initail index1 file commit"
+  698  git status
+  699  git config-global user.email
+  700  git user.email
+  701  git --help
+  702  git help config-global
+  703  user.email
+  704  git user.email
+  705  git config-global user.email nandini151807@gmail.com
+  706  git config --global
+  707  git config --global user.name
+  708  git config --global user.email
+  709  git status
+  710  nano index1.html 
+  711  git status
+  712  git commit -a -m "updated index1.html"
+  713  git status
+  714  git log
+   715  git log --list
+  716  git log --oneline
+  717  nano index2.html
+  718  nano index3.html
+  719  git status
+  720  git add .
+  721  git status
+  722  git commit -m "created and commited 2 and 3 index files"
+  723  git ls-files .git
+  724  git ls-files
+  725  ls
+  726  ls -la.git
+  727  nano index4.html
+  728  git ls-files
+  729  ls
+  730  nano index1.html 
+  731  git status
+  732  git add .
+  733  git commit -m "added 4 file and edited 1st file"
+  734  git status
+  735  git log
+  736  --oneline
+  737  git log --oneline
+  738  nano index5.html
+  739  nano index4.html 
+  740  git add .
+  741  git commit -m "5th commit"
+  742  git status
+  743  git log --oneline
+  744  git commit --amend
+  745  git log --graph --all --oneline
+  746  git log -n 3
+  747  git status
+  748  nano index2.html 
+  749  git diff index2.html
+  750  git status
+  751  git add index2.html 
+  752  git status
+  753  git diff --staged index2.html
+  754  cat index2.html 
+  755  git restore index2.html
+  756  cat index2.html 
+  757  git status
+  758  git diff index2.html
+  759  git diff --staged index2.html
+  760  git restore index2.html
+  761  git diff --staged index2.html
+  762  git commit -m "edited 2nd file"
+  763  git log --oneline
+  764  git diff 32232b3 d1d35fe
+  765  git rm index5.html 
+  766  ls
+  767  git ls-files
+  768  git status
+  769  git rm --cached index5.html
+  770  git rm --cached index4.html
+  771  git ls-files
+  772  ls
+  773  nano .gitignore
+  774  nano index5.html
+  775  git status
+  776  git add .
+  777  git commit -m "added gitignore and 2 more files"
+  778  git status
+  779  nano index3.html 
+  780  git status
+  781  git commit -a -m "modified after .gitignore"
+  782  git status
+  783  nano .gitignore 
+  784  git status
+  785  git commit -a -m "modifid .gitignore"
+  786  git status
+  787  git restore index3.html
+  788  git status
+  789  nano .gitignore
+  790  nano index6.html
+  791  git status
+  792  git commit -a -m "created 6 file after adding into gitignore"
+  793  git status
+  794  ls
+  795  git ls-files
+  796  git tag -a v1.1 -m "tagged v1.1"
+  797  git log --oneline
+  798  git status
+  799  nano index3.html
+  800  git status
+  801  git stash index3.html
+  802  git stash 
+  803  git status
+  804  git status list
+  805  git stash list
+  806  nano index2.html
+  807  git status
+  808  git commit -a -m "updated for mod1 chamge"
+  809  git status
+  810  nano index3.html
+  811  cat index3.html 
+  812  git stash list
+  813  git show stash@{0}
+  814  git stash apply stash@{0}
+  815  git status
+  816  git commit -a -m "edited file3"
+  817  git stash apply stash@{0}
+  818  git status
+  819  nano index3.html
+  820  git stash apply stash@{0}
+  821  git status
+  822  git stash pop stash@{0}
+  823  git merge index3.html
+  824  git stash pop stash@{0}
+
