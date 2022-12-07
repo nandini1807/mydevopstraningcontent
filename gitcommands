@@ -134,4 +134,114 @@
   822  git stash pop stash@{0}
   823  git merge index3.html
   824  git stash pop stash@{0}
+  669  clear
+  670  ls
+  671  git checkout -b b1 master
+  672  git merge index3.html
+  673  git status
+  674  git commit -a -m "modified and got conflict merge"
+  675  git status
+  676  git checkout -b b1 master
+  677  git status
+  678  git log --oneline
+  679  git checkout master
+  680  git status
+  681  nano index2.html
+  682  git status
+  683  git commit -a -m "in master branch modified file2"
+  684  git log --oneline
+  685  git checkout b1
+  686  git log --oneline
+  687  git status
+  688  nano index1.html
+  689  git status
+  690  git commit -a -m "in b1 branch modified file1"
+  691  git log --oneline
+  692  git status
+  693  git checkout master
+  694  git status
+  695  git log --oneline
+  696  git merge b1
+  697  git log --oneline
+  698  git status
+  699  cat index1.html 
+  700  cat index2.html 
+  701  git checkout b1
+  702  git log --oneline
+  703  git checkout -b b2 master
+  704  nano index3.html 
+  705  git status
+  706  git commit -a -m "in b2 edited file3"
+  707  git log --oneline
+  708  git checkout master
+  709  git status
+  710  nano index4.html 
+  711  git status
+  712  git commit -a -m "in master edited fle4"
+  713  git status
+  714  git log --oneline
+  715  git checkout b2
+  716  git checkout master
+  717  git merge b2
+  718  y
+  719  git log --oneline
+  720  git checkout b2
+  721  git log --oneline
+  722  git checkout -b b3 master
+  723  ls
+  724  nano index6.html 
+  725  git status
+  726  nano indde1.html
+  727  nano index1.html 
+  728  git status
+  729  git commit -a -m "in branch 3 edited file1"
+  730  git status
+  731  git log --oneline
+  732  git checkout master
+  733  nano index1.html 
+  734  git commit -a -m "in master edited file1"
+  735  git status
+  736  git log --oneline
+  737  git merge b3
+  738  nano index1.html 
+  739  git status
+  740  git commit -a -m "resolved the conflict"
+  741  git log --oneline
+  742  cat index1.html 
+  743  git status
+  744  nano index3.html 
+  745  git commit -a -m "commiting to checkout"
+  746  git status
+  747  git log --oneline
+  748  git checkout a37336b
+  749  git log --oneline
+  750  git status
+  751  cat index3.html 
+  752  ls
+  753  git ls-files
+  754  git checkout master
+  755  git status
+  756  nano index7.html
+  757  git commit -a -m "commiting 7 file"
+  758  git add index7.html 
+  759  git commit -m "commiting 7 file"
+  760  git log --oneline
+  761  git reset --soft 42c696c
+  762  git status
+  763  ls
+  764  git ls-files
+  765  git commit -m "another commit from file7"
+  766  git status
+  767  git log --oneline
+  768  git reset 42c696c
+  769  git log --oneline
+  770  git status
+  771  ls
+  772  git ls-files
+  773  git commit -a -m "commiting file 7 to hard reset"
+  774  git add index7.html 
+  775  git commit -m "commiting file 7 to hard reset"
+  776  git status
+  777  git log --oneline
+  778  git reset --hard 42c696c
 
