@@ -1,0 +1,207 @@
+346  sudo apt update
+  347  sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+  348  pwd
+  349  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  350  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+  351  apt-cache policy docker-ce
+  352  sudo apt install docker-ce -y
+  353  sudo systemctl status docker
+  354  docker --version
+  355  docker version
+  356  docker
+  357  sudo docker version
+  358  git config --global user.email
+  359  git config --global user.email "nandini151807@gmail.com"
+  360  git config --global user.email
+  361  git config --global user.name
+  362  git config --global user.name "nandini151807"
+  363  git config --global user.name
+  364  sudo groupadd docker
+  365  sudo usermod -aG docker $USER
+  366  echo $USER
+  367  newgrp docker
+  368  docker ps
+  369  newgrp docker
+  370  docker ps
+  371  docker ps -a
+  372  docker ps
+  373  watch docker ps
+  374  docker attach myalpine1
+  375  docker attach nandini
+  376  whereis docker
+  377  docker images
+  378  docker pull hello-worls
+  379  docker pull hello-world
+  380  docker images
+  381  docker run hello-world
+  382  docker images
+  383  docker pull busybox
+  384  docker pull alpine
+  385  docker images
+  386  docker run -it alpine sh
+  387  docker ps
+  388  docker run -d alpine sleep 21
+  389  docker run -d alpine sleep 23
+  390  docker run -d alpine sleep 25
+  391  docker run -d --name alpine1 alpine sleep 3600
+  392  docker run -d --name alpine2 alpine sleep 3600
+  393  docker exec -it alpine1 sh
+  394  docker exec -it alpine2 sh
+  395  docker ps
+  396  docker ps -a
+  397  docker rm bd
+  398  docker ps -a
+  399  docker ps -a |wc -l
+  400  docker ps -aq
+  401  docker rm $(docker ps -aq)
+  402  docker ps -aq
+  403  docker ps -a |wc -l
+  404  docker ps -a
+  405  docker images
+  406  history
+  407  docker images
+  408  docker run -it --name nandini alpine sh
+  409  docker ps -a
+  410  docker diff dff031940d52
+  411  docker ps -a
+  412  docker start nandini
+  413  docker commit dff031940d52 myalpineimage1
+  414  docker images
+  415  docker tag myalpineimage1 nandini151807/myalpineimage1
+  416  docker images
+  417  docker login
+  418  docker push nandini151807/myalpineimage1
+  419  docker images
+  420  docker pull harshithagutta17/harshitha3
+  421  docker images
+  422  docker run -it --name harshi harshithagutta17/harshitha3 sh
+  423  docker images
+  424  docker run python
+  425  docker images
+  426  docker run -it --name py1 python bash
+  427  history
+  428  docker ps -a
+  429  docker rm $(docker ps -aq)
+  430  docker ps -a
+  431  docker stop dff031940d52
+  432  docker ps -a
+  433  docker rm $(docker ps -aq)
+  434  docker images
+  435  docker rmi $(docker images -q)
+  436  docker images
+  437  docker rmi myalpineimage1
+  438  docker images
+  439  docker rmi nandini151807/myalpineimage
+  440  docker rmi nandini151807/myalpineimage1
+  441  docker rmi alpine
+  442  docker images
+  443  docker run centos
+  444  docker images
+  445  docker exec -it mycentos sh
+  446  docker exec -it mycentos centos sh
+  447  docker run -it --name cent1 centos sh
+  448  docker tag cent1 nandini151807/cent1
+  449  docker images
+  450  docker tag centos nandini151807/cent1
+  451  docker images
+  452  docker tag centos nandini151807/centosnov22:1.0.1
+  453  docker images
+  454  docker push nandini151807/centosnov22
+  455  docker login
+  456  docker push nandini151807/centosnov22
+  457  docker push nandini151807/cent1
+  458  docker images
+  459  docker push nandini151807/centosnov22:1.0.1
+  460  docker ps -a
+  461  docker start cent1
+  462  docker attach cent1
+  463  docker diff cent1
+  464  docker commit cent1
+  465  docker commit cent1 nandini151807/cent1.0.1
+  466  docker images
+  467  docker push nandini151807/cent1.0.1
+  468  docker run prudhviraj75/centosnov22:1.0.1
+  469  docker images
+  470  docker run -it --name novcent prudhviraj75/centosnov22 sh
+  471  docker run -it --name novcent prudhviraj75/centosnov22:1.0.1 sh
+  472  history
+  473  cd ..
+  474  pwd
+  475  cd docker/
+  476  ls
+  477  docker network ls
+  478  docker inspect bridge
+  479  docker ps
+  480  docker ps -a
+  481  docker run -d --name nginxcont1 nginx
+  482  docker ps
+  483  docker inspect bridge
+  484  docker exec -it nginxcon1 sh
+  485  docker ps
+  486  docker exec -it nginxcont1 sh
+  487  docker run -d --name nginxcont2 -p 8989:80 nginx
+  488  docker exec -it nginxcont2 sh
+  489  ufw status
+  490  sudo ufw allow 8989/tcp
+  491  sudo ufw status
+  492  docker network create --driver=bridge --subnet=172.20.0.0/16 bri20
+  493  docker network ls
+  494  docker network inspect bri20
+  495  docker run -d --name nginx43 --network=bri20 nginx
+  496  docker ps
+  497  ping 172.20.0.0
+  498  docker run -d --name nginx44 --network=bri20 nginx
+  499  docker ps
+  500  docker run -d --name nginx44 -p 6666:80 nginx
+  501  docker run -d nginx44 -p 6666:80 nginx
+  502  docker exec -d nginx44 -p 6666:80 nginx
+  503  docker network ls
+  504  docker ps
+  505  docker run -d --name nginx45 -p 6666:80 nginx
+  506  ufw allow 6666/tcp
+  507  sudo ufw allow 6666/tcp
+  508  docker ps
+  509  docker rm nginx44
+  510  docker stop nginx44
+  511  docker rm nginx44
+  512  docker rm nginx45
+  513  docker stop nginx45
+  514  docker rm nginx45
+  515  docker ps
+  516  docker run -d --name nginx44 --network=bri20 -p 6666:80 nginx
+  517  docker ps
+  518  docker run httpd
+  519  docker ps
+  520  docker images
+  521  docker run -d --name httpcont1 --network=bri20 -p 9999:80 httpd
+  522  docker ps
+  523  curl http://10.0.1.43:6666
+  524  curl http://10.0.1.43:9999
+  525  sudo ufw allow 9999/tcp
+  526  docker network inspect httpcont1 bri20
+  527  docker inspect httpcont1 bri20
+  528  docker pull tomcat
+  529  docker run tomcat
+  530  docker images
+  531  docker run -d --name tom1 -p 9090:80 tomcat
+  532  docker run -d --name tom1 --network=bri20 -p 9090:80 tomcat
+  533  docker run -d --name tom2 --network=bri20 -p 7777:80 tomcat
+  534  docker ps -a
+  535  docker rm tom1
+  536  docker rm tom2
+  537  docker stop tom2
+  538  docker rm tom1
+  539  docker rm tom2
+  540  docker run -d --name tom2 -p 7777:80 tomcat
+  541  docker exec -it tom2 sh
+  542  docker run nginxdemos/hello:plain-text
+  543  docker run -d --name demo1 -p 8888:80 nginxdemos/hello:plain-text
+  544  docker ps a
+  545  docker ps -a
+  546  docker inspect demo1
+  547  curl https://172.17.0.5:8888
+  548  docker run -d --name demo1 -p 8889:80 nginxdemos/hello
+  549  docker run -d --name demo2 -p 8887:80 nginxdemos/hello
+  550  su -
+  551  docker run -d --name apache2 -p 3456:80 -v /web/:/usr/local/apache2/htdocs/ httpd
+  552  curl http://10.0.1.43:3456
