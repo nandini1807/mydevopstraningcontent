@@ -244,4 +244,32 @@
   776  git status
   777  git log --oneline
   778  git reset --hard 42c696c
-
+  784  nano gitcommands 
+  785  git push -u origin master
+  786  git status
+  787  git commit -a -m "added git commands"
+  788  git push -u origin master
+  789  cd ..
+  790  ls
+  791  cd gitSample1/
+  792  ls
+  793  git log --oneline
+  794  git revert 42c696c
+  795  git log --oneline
+  796  git revert cc6ffea
+  797  git log --oneline
+  798  ls
+  799  git ls-files
+  800  nano index7.html
+  801  git add .
+  802  git commit -m "commiting file7 to revert"
+  803  git status
+  804  git log --oneline
+  805  git revert 512124b
+  806  git log --oneline
+  807  ls
+  808  git ls-files
+  809  git revert 4d23583
+  810  ls
+  811  git ls-files
+  812  git log --oneline
